@@ -1,0 +1,28 @@
+
+.twintcw-multi-control .twintcw-controls {
+	display: inline-block;
+    margin-right: .3125rem;
+}
+
+.twintcw-confirmation-form {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.twintcw-control-group {
+	margin-bottom: 15px;
+}
+
+.twintcw-control-label {
+	margin-bottom: 1em;
+	text-align: left;
+}
+.twintcw-control-label .twintcw-required {
+	color: #d80000;
+	font-weight: bold;
+}
+
+.twintcw-description,
+.twintcw-help-block {
+	margin-top: 3px;
+}
