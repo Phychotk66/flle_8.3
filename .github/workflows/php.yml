@@ -1,3 +1,4 @@
+
 name: PHP Composer
 
 on:
@@ -17,6 +18,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Set up PHP 8.3
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.3'
+
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
@@ -32,8 +38,6 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
+    # Uncomment the following steps if you have tests to run
     # - name: Run test suite
     #   run: composer run-script test
