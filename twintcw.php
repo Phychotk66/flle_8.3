@@ -17,7 +17,7 @@
  * See the customweb software licence agreement for more details.
  *
  */
-
+echo "Last updated: " . date("F d Y H:i:s.", filemtime(__FILE__));
 require_once("includes/globalinclude.php");
 $AktuelleSeite = "TWINTCW";
 
